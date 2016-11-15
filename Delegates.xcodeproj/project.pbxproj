@@ -14,6 +14,8 @@
 		2206687B1DDA919D00FBE9D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2206687A1DDA919D00FBE9D9 /* Assets.xcassets */; };
 		2206687E1DDA919D00FBE9D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2206687C1DDA919D00FBE9D9 /* LaunchScreen.storyboard */; };
 		220668891DDA919D00FBE9D9 /* DelegatesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 220668881DDA919D00FBE9D9 /* DelegatesTests.m */; };
+		220668951DDA91CD00FBE9D9 /* TouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220668941DDA91CD00FBE9D9 /* TouchView.m */; };
+		2206689B1DDA99AE00FBE9D9 /* Sam.m in Sources */ = {isa = PBXBuildFile; fileRef = 2206689A1DDA99AE00FBE9D9 /* Sam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,11 @@
 		220668841DDA919D00FBE9D9 /* DelegatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		220668881DDA919D00FBE9D9 /* DelegatesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegatesTests.m; sourceTree = "<group>"; };
 		2206688A1DDA919D00FBE9D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		220668931DDA91CD00FBE9D9 /* TouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchView.h; sourceTree = "<group>"; };
+		220668941DDA91CD00FBE9D9 /* TouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchView.m; sourceTree = "<group>"; };
+		220668971DDA938900FBE9D9 /* TouchViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewDelegate.h; sourceTree = "<group>"; };
+		220668991DDA99AE00FBE9D9 /* Sam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sam.h; sourceTree = "<group>"; };
+		2206689A1DDA99AE00FBE9D9 /* Sam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sam.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +92,9 @@
 				220668721DDA919D00FBE9D9 /* AppDelegate.m */,
 				220668741DDA919D00FBE9D9 /* ViewController.h */,
 				220668751DDA919D00FBE9D9 /* ViewController.m */,
+				220668991DDA99AE00FBE9D9 /* Sam.h */,
+				2206689A1DDA99AE00FBE9D9 /* Sam.m */,
+				220668981DDA955800FBE9D9 /* TouchView */,
 				220668771DDA919D00FBE9D9 /* Main.storyboard */,
 				2206687A1DDA919D00FBE9D9 /* Assets.xcassets */,
 				2206687C1DDA919D00FBE9D9 /* LaunchScreen.storyboard */,
@@ -109,6 +119,16 @@
 				2206688A1DDA919D00FBE9D9 /* Info.plist */,
 			);
 			path = DelegatesTests;
+			sourceTree = "<group>";
+		};
+		220668981DDA955800FBE9D9 /* TouchView */ = {
+			isa = PBXGroup;
+			children = (
+				220668931DDA91CD00FBE9D9 /* TouchView.h */,
+				220668941DDA91CD00FBE9D9 /* TouchView.m */,
+				220668971DDA938900FBE9D9 /* TouchViewDelegate.h */,
+			);
+			name = TouchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +235,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220668951DDA91CD00FBE9D9 /* TouchView.m in Sources */,
 				220668761DDA919D00FBE9D9 /* ViewController.m in Sources */,
 				220668731DDA919D00FBE9D9 /* AppDelegate.m in Sources */,
+				2206689B1DDA99AE00FBE9D9 /* Sam.m in Sources */,
 				220668701DDA919D00FBE9D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +438,7 @@
 				2206688F1DDA919D00FBE9D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		220668901DDA919D00FBE9D9 /* Build configuration list for PBXNativeTarget "DelegatesTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +447,7 @@
 				220668921DDA919D00FBE9D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
